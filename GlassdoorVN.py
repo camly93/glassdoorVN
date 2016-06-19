@@ -50,9 +50,18 @@ def aboutus():
 #trang SEARCH
 @app.route('/home', methods=['GET','POST'])
 def home():
+    temp=[]
     if request.method == 'POST':
-        print("someone is searching...")
-        return redirect('/company-list')
+        for x in everything:
+            if x['company']==request.form['COMPANY']:
+                temp.append(x)
+            if x['location']==request.form['CITY']:
+                temp.append(x)
+            for y in x['jobgroup']:
+                if y==request.form['JOB TITLE']:
+                    temp.append(x)
+        print(temp)
+        return render_template('Company-list.html',everything=temp,manypage=len(temp),current=1)
     return render_template('Home.html')
 
 #trang COMPANY REVIEW
