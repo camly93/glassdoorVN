@@ -21,26 +21,24 @@
 <div class="log">
 	<div class="content1">
 		<h2>Sign In</h2>
-		<form>
+		<form action="login" method="post" class="form-group">
 			<input type="text" name="userid" value="USERNAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'USERNAME';}">
 			<input type="password" name="psw" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}">
-			<div class="button-row">
+            <div class="button-row">
 				<input type="submit" class="sign-in" value="Sign In">
-				<input type="reset" class="reset" value="Reset">
-				<div class="clear"></div>
 			</div>
 		</form>
 	</div>
-	<div class="content2">
-		<h2>Sign Up</h2>
-		<form>
-			<input type="text" name="userid" value="USERNAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME AND SURNAME';}">
-			<input type="email" name="email" value="EMAIL ADDRESS" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL ADDRESS';}">
-			<input type="password" name="psw" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}">
-			<input type="submit" class="register" value="Register">
-		</form>
-	</div>
-	<div class="clear"></div>
+	<!--<div class="content2">-->
+		<!--<h2>Sign Up</h2>-->
+		<!--<form action="Signup" method="post" class="form-group">-->
+			<!--<input type="text" name="newuserid" value="USERNAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME AND SURNAME';}">-->
+			<!--<input type="email" name="newemail" value="EMAIL ADDRESS" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL ADDRESS';}">-->
+			<!--<input type="password" name="newpsw" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}">-->
+			<!--<input type="submit" class="sign-up" value="SignUp">-->
+		<!--</form>-->
+	<!--</div>-->
+	<!--<div class="clear"></div>-->
 </div>
 <div class="footer">
 	<p>© 2016 All Rights Reserved | Design by Codegasm</p>

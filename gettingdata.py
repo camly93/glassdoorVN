@@ -67,7 +67,9 @@ def getjobdetail(link,jobdetail):
         templist.append(x.get_text())
     tempdict.update({'jobgroup':templist})
     date = soup.find('div', {'class': "pull-right text-gray-light"})
-    tempdict.update({'dateandview': date.get_text()})
+    dateandview=date.find_all('div',{'class':"pull-left small padding-15"})
+    for x in dateandview:
+        tempdict.update({'dateandview': x.get_text()})
     print(len(jobdetail))
     print(jobdetail[len(jobdetail)-1])
 
