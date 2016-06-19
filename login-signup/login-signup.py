@@ -8,18 +8,19 @@ litt=[]
 pagelist=[]
 temp=[]
 cur=0
+a=25
 for x in everything:
     litt.append(x)
-print(len(litt)//100+1)
-for x in range (len(litt)//100+1):
+print(len(litt)//a+1)
+for x in range (len(litt)//a+1):
     temp = []
-    if cur<(len(litt)//100):
-        for y in range(100):
-            temp.append(litt[x*100+y])
+    if cur<(len(litt)//a):
+        for y in range(a):
+            temp.append(litt[x*a+y])
         cur=cur+1
     else:
-        for y in range(len(litt)-(len(litt)//100)*100):
-            temp.append(litt[x*100+y])
+        for y in range(len(litt)-(len(litt)//a)*a):
+            temp.append(litt[x*a+y])
     pagelist.append(temp)
 app = Flask(__name__)
 #home page

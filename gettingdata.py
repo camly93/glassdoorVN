@@ -20,6 +20,8 @@ def GetDetailLINK(link,linklist):
                 linklist.append(d.a['href'])
     temp=soup.find('li',{'class':'next'})
     print(len(linklist))
+    if len(linklist)>=100:
+        return 0
     if temp==None:
         return 0
     else:

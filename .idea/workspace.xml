@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecd7e2d5-0ead-4df2-bc67-12b116314451" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/glassdoorVN.iml" afterPath="$PROJECT_DIR$/.idea/glassdoorVN.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gettingdata.py" afterPath="$PROJECT_DIR$/gettingdata.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login-signup/login-signup.py" afterPath="$PROJECT_DIR$/login-signup/login-signup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login-signup/templates/login.html" afterPath="$PROJECT_DIR$/login-signup/templates/login.html" />
     </list>
     <ignored path="glassdoorVN.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login-signup.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login-signup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login-signup/login-signup.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#0#79#0" expanded="true" />
               </folding>
@@ -47,8 +44,8 @@
       <file leaf-file-name="gettingdata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gettingdata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+            <state relative-caret-position="374">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -67,8 +64,18 @@
       <file leaf-file-name="xxx.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login-signup/templates/xxx.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="140" column="10" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
+            <state relative-caret-position="212">
+              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jobdetail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login-signup/templates/jobdetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -115,6 +122,7 @@
         <option value="$PROJECT_DIR$/gettingdata.py" />
         <option value="$PROJECT_DIR$/login-signup/login-signup.py" />
         <option value="$PROJECT_DIR$/login-signup/templates/xxx.html" />
+        <option value="$PROJECT_DIR$/login-signup/templates/jobdetail.html" />
       </list>
     </option>
   </component>
@@ -263,7 +271,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
-  <component name="RunManager" selected="Python.gettingdata">
+  <component name="RunManager" selected="Python.login-signup">
     <configuration default="false" name="Home.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/glassdoorVN/templates/Home.html">
       <method />
     </configuration>
@@ -453,8 +461,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.gettingdata" />
-        <item index="1" class="java.lang.String" itemvalue="Python.login-signup" />
+        <item index="0" class="java.lang.String" itemvalue="Python.login-signup" />
+        <item index="1" class="java.lang.String" itemvalue="Python.gettingdata" />
       </list>
     </recent_temporary>
   </component>
@@ -472,6 +480,14 @@
       <option name="presentableId" value="Default" />
       <updated>1465977213668</updated>
     </task>
+    <task id="LOCAL-00001" summary="coi nhu xong">
+      <created>1466302622756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1466302622756</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -509,12 +525,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="coi nhu xong" />
+    <option name="LAST_COMMIT_MESSAGE" value="coi nhu xong" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/login-signup/login-signup.py</url>
-          <line>27</line>
+          <line>28</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/login-signup/login-signup.py</url>
@@ -527,14 +547,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login-signup/templates/xxx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login-signup/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -851,14 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login-signup/templates/xxx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" column="10" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login-signup/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -877,8 +881,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gettingdata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+        <state relative-caret-position="374">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-signup/templates/xxx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -886,10 +898,18 @@
     <entry file="file://$PROJECT_DIR$/login-signup/login-signup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#0#79#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-signup/templates/jobdetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
