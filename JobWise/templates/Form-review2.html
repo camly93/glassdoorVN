@@ -23,10 +23,8 @@
 
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -34,15 +32,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">No Name Project</a>
+                <a class="navbar-brand" href="/home">JobWise</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="/about-us">About</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Company</a>
                     </li>
                 </ul>
             </div>
@@ -53,25 +51,22 @@
         <div class="row content">
         <div class="col-sm-2 sidenav"></div>
 
-    <div class="col-sm-8 text-left">
-{#      <h1>Welcome</h1>#}
-{#      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>#}
-{#      <hr>#}
-{#      <h3>Test</h3>#}
-{#      <p>Lorem ipsum...</p>#}
-        {#	<h1>Nhận xét nhà tuyển dụng</h1>#}
-
+    <div class="col-sm-8">
 	<div class="main-content">
 		<div class="form">
 			<div class="sap_tabs">
 				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-					<h6>Chỉ cần dành ra 1 phút, bạn đã có thể giúp những ứng viên khác có được công việc mơ ước của họ.</h6>
+					<h2>"Chỉ cần dành ra 1 phút, bạn đã có thể giúp những ứng viên khác có được công việc mơ ước của họ!"</h2>
+                    <hr>
+
 				        <div class="facts">
 		                    <div class="register">
 						        <form>
-							        <h3>Công ty:</h3>
+							        <h4>Công ty:</h4>     <!-- Nhap tu dong ten cong ty -->
 							        <input 	 id="data_1" name="data_1" type="text" required="" style="width : 450px;">
-									<h3>Xếp hạng (5 - rất hài lòng; 1 - rất không hài lòng)<h3>
+                                    <hr>
+
+									<h4>Xếp hạng (5 - rất hài lòng; 1 - rất không hài lòng)<h3>
 									<div>
 										<select id="data_2" name="data_2" style="width : 100px;height:35px;" >
 										<option>5</option>
@@ -81,20 +76,31 @@
 										<option>1</option>
 										</select><br><br>
 									</div>
+                                        <hr>
 
-							        <h3>Tiêu đề:</h3>
+							        <h4>Tiêu đề:</h4>
 							        <input id="data_3" name="data_3" type="text" required="" style="width : 450px;">
-							        <h3>Điểm cộng:</h3>
+                                        <hr>
+
+							        <h4>Điểm cộng:</h4>
 							        <input id="data_4" name="data_4" type="text" required="" style="width : 450px;height: 150px;">
-							        <h3>Điểm trừ:</h3>
+                                        <hr>
+
+							        <h4>Điểm trừ:</h4>
 							        <input id="data_5" name="data_5" type="text" required="" style="width : 450px; height: 150px;" >
-									<h3>Trải nghiệm phỏng vấn:</h3>
+                                        <hr>
+
+									<h4>Trải nghiệm phỏng vấn:</h4>
 							        <input id="data_6" name="data_6" type="text" required="" style="width : 450px; height: 150px;" >
-									<h3>Góp ý với lãnh đạo:</h3>
+                                        <hr>
+
+									<h4>Góp ý với lãnh đạo:</h4>
 							        <input id="data_7" name="data_7" type="text" required="" style="width : 450px; height: 150px;" >
-							        <div class="sign-up">
-									    <input type="submit" value="Submit"/>
-								    </div>
+                                        <hr>
+
+                                    <button type="submit" class="btn btn-success button">SUBMIT</button>
+                                    <div class="clear"></div>
+
 						        </form>
 					        </div>
 				        </div>
@@ -117,7 +123,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
 
     <!-- jQuery -->

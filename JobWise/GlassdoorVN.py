@@ -24,11 +24,11 @@ def login():
 def signup():
     return render_template('Company-review.html')
 
-@app.route('/review-form')
-def review_form():
-    return render_template('Form-review.html')
+# @app.route('/review-form')
+# def review_form():
+#     return render_template('Form-review.html')
 
-@app.route('/review-form2')
+@app.route('/review-form')
 def review_form2():
     return render_template('Form-review2.html')
 
