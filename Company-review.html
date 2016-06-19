@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Company Review</title>
+
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/round-about.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="/home">JobWise</a></div>
+
+                <ul class="nav navbar-nav">
+                    <li><a href="/about-us">ABOUT</a></li>
+                    <li><a href="/job-list">COMPANY</a></li>
+                    <li><a href="/home">SEARCH</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span> <br>
+      </div>
+        <div class="col-sm-3 sidenav">
+            <button type="submit" class="btn btn-success button">SUBMIT REVIEW</button><div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-9">
+        <div class="well">
+            <h4>Tên công ty:{{company}}</h4>
+            <p>Thông tin:{{info}}</p>
+        </div>
+
+      <hr>
+        {%for x in noidung%}
+      <h2></h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi Ngủ Cho Bớt Sầu, 19/6/2016.</h5>
+      <p>Nội dung:{{x}}</p>
+      <br><br>
+        {%endfor%}
+    </hr>
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+        <div class="col-sm-2 sidenav"></div>
+
+    <div class="col-sm-8">
+	<div class="main-content">
+		<div class="frm0">
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<h2>"Chỉ cần dành ra 1 phút, bạn đã có thể giúp những ứng viên khác có được công việc mơ ước của họ!"</h2>
+                    <hr>
+
+				        <div class="facts">
+		                    <div class="register">
+						        <form method="POST"><!-- Nhap tu dong ten cong ty -->
+							        <h4>Nội dung:</h4>
+							        <input id="data_2" name="data_2" type="text" style="width : 450px;">
+                                    <button type="submit" class="btn btn-success button">SUBMIT</button>
+                                    <div class="clear"></div>
+
+						        </form>
+					        </div>
+				        </div>
+                </hr>
+                </div>
+
+</div>
+        </div></div>
+    </div>
+        </div>
+        </div>
+    <div class="col-sm-2 sidenav"></div>
+  </div>
+</div>
+
+        <div class="clear"></div>
+
+    <div class="container">
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2016 All Rights Reserved | JobWise</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
