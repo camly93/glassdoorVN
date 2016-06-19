@@ -29,17 +29,13 @@ def home():
     return "Welcome home!"
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    error = None
+    collection = db['account']
+    account = collection.find()
     if request.method == 'POST':
-        if request.form['userid']=='aaaa':
-            print('x')
-        else:
-            error = 'Invalid username/password'
-        a=(request.args.get('h1',''))
-        print(a)
-    # the code below is executed if the request method
-    # was GET or the credentials were invalid
-    return render_template('login.html', error=error)
+        for x in account:
+            if request.form['username']==x['username'] and x['password']==request.form['password']:
+                return redirect('/search-result')
+    return render_template('logn.html')
 @app.route('/signup')
 def index():
     resp = make_response(render_template('xxx.html'))
