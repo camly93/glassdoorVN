@@ -1,11 +1,12 @@
-from flask import Flask,render_template,request, redirect
-
+from flask import Flask,render_template,request, redirect,url_for,make_response
+from pymongo import MongoClient
+client = MongoClient('mongodb://Raventine:raven123@ds013564.mlab.com:13564/job-offer')
 app = Flask(__name__, static_url_path ='/static')
 
 @app.route('/', methods=['GET','POST'])
 def home():
     if request.method == 'POST':
-        print("someone is searching...")
+
         return redirect('/home')
     return render_template('Login.html')
 
@@ -16,8 +17,11 @@ def aboutus():
 @app.route('/home', methods=['GET','POST'])
 def login():
     if request.method == 'POST':
+        db = client['job-offer']
+        collection = db['account']
+        everything = collection.find(request.form['USERNAME'])
         print("someone is searching...")
-        return redirect('/company')
+        return redirect('')
     return render_template('Home.html')
 
 @app.route('/company-review')
