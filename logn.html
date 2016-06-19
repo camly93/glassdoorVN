@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="jumbotron">
+    <h1 >This is login page! </h1>
+</div>
+<form action="login" method="post" class="form-group">
+    <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <div>
+            <label for="username">Username</label>
+            <input placeholder="USENAME" value="" type="username" name="username" class="form-control">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input placeholder="PASSWORD" type="password" name="password" class="form-control">
+        <!--</div>-->
+        <!--<li>{{error}}</li>-->
+        <!--<div>-->
+        <button type="submit" class="btn btn-success button">Login</button>
+    </div>
+    </div>
+
+</div>
+</form>
+</body>
+</html>
