@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,94 +10,33 @@
 
     <title>Login</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="/static/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="/static/round-about.css" rel="stylesheet">
-{#    <link href="/static/style.css" rel="stylesheet">#}
-
+    <link href="/static/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/home">JobWise</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/about-us">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Company</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right"></ul>
-            </div>
-        </div>
-    </nav>
-
-    <div><form method="POST" action="login" role="form">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-            <input placeholder="USERNAME" type="USERNAME" name="USERNAME" class="form-control">
-            <div class="clear"></div>
-        </div>
-
-        <br>
+    <div class="container">
+        <div><form method="POST" role="form">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <label>USERNAME</label>
+                    <input placeholder="USERNAME" type="USERNAME" name="username" class="form-control">
+                    <div class="clear"></div> <h1></h1> </div>
 
         <div class="col-sm-6 col-sm-offset-3">
-            <input placeholder="PASSWORD" type="PASSWORD" name="PASSWORD" class="form-control">
-            <div class="clear"></div></div>
+            <label>PASSWORD</label>
+            <input placeholder="PASSWORD" type="PASSWORD" name="password" class="form-control">
+            <div class="clear"></div> <h1></h1> </div>
 
         <div class="col-sm-6 col-sm-offset-3">
-            <button type="submit" class="btn btn-success button">SIGN IN</button>
+            <button type="submit" class="btn btn-success button">LOG IN</button>
             <div class="clear"></div>
         </div>
     </div>
 </form></div>
-
-{##}
-{#    <form role="form">#}
-{#  <div class="form-group">#}
-{#    <input type="email" class="form-control" id="email">#}
-{#  </div>#}
-{#  <div class="form-group">#}
-{#    <input type="password" class="form-control" id="pwd">#}
-{#  </div>#}
-{#  <div class="checkbox">#}
-{#    <label><input type="checkbox"> Remember me</label>#}
-{#  </div>#}
-{#  <button type="submit" class="btn btn-success button">SIGN IN</button>#}
-{#</form>#}
-
-    <div class="container">
-        <footer>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>© 2016 All Rights Reserved | No Name Project</p>
-                </div>
-            </div>
-        </footer>
-
     </div>
-
-    <!-- jQuery -->
-    <script src="/static/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/static/js/bootstrap.min.js"></script>
 
 </body>
 
