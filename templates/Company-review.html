@@ -15,8 +15,6 @@
 </head>
 
 <body>
-
-    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header"><a class="navbar-brand" href="/home">JobWise</a></div>
@@ -24,57 +22,74 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/about-us">/ VỀ CHÚNG TÔI</a></li>
                     <li><a href="/company-list">/ DANH SÁCH CÔNG TY</a></li>
-                    <li><a href="/review-form">/ ĐÁNH GIÁ CÔNG TY</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-{#<div class="container-fluid">#}
-{#  <div class="row content">#}
-{#    <div class="col-sm-3 sidenav">#}
-{#      <div class="input-group">#}
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <div class="input-group">
 {#        <input type="text" class="form-control" placeholder="Search...">#}
 {#        <span class="input-group-btn">#}
 {#          <button class="btn btn-default" type="button">#}
 {#            <span class="glyphicon glyphicon-search"></span>#}
 {#          </button>#}
 {#        </span> <br>#}
-{#      </div>#}
-{#    </div>#}
-
-        <div class="col-sm-3 sidenav">
-            <button type="submit" class="btn btn-danger button" style="width: 200px ;height: 50px;">SUBMIT MY REVIEW</button><div class="clear"></div>
-        </div>
-
+      </div>
+    </div>
 
     <div class="col-sm-9">
         <div class="well">
-            <h4>CÔNG TY</h4>
-            <p>Thông tin về công ty....</p>
+            <h1>{{company}}</h1>
+            <p>{{info}}</p>
         </div>
 
-      <hr>
-      <h2>"Công ty này rất quan tâm tới nhân viên"</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi Ngủ Cho Bớt Sầu, 19/6/2016.</h5>
-      <p>Số điểm: <br>Điểm cộng: <br>Điểm trừ: <br>Kiến nghị: <br>Trải nghiệm phỏng vấn:</p>
-      <br><br>
+    	<div class="main-content">
+		<div class="frm0">
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                    <div><h1></h1></div>
+					<i><h3>"Chỉ cần dành ra 1 phút, bạn đã có thể giúp những ứng viên khác có được công việc mơ ước của họ!"</h3></i>
+                    <hr>
+				        <div class="facts">
+		                    <div class="register">
+						        <form method="POST">
+							        <h4>Nội dung đánh giá:</h4>
+							        <input id="data_2" name="data_2" type="text" style="width : 450px;height: 150px">
+                                    <button type="submit" class="btn btn-success button">GÓP Ý</button>
+                                    <div class="clear"></div>
+						        </form>
+					        </div>
+				        </div>
+                </hr>
+                </div>
+            </div>
+        </div>
+        </div>
 
-      <hr>
-      <h2>"Công ty này làm ăn như @)#(%)(%_)$%"</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi Hiepdamdang, 20/6/2016.</h5>
-      <p>Số điểm: <br>Điểm cộng: <br>Điểm trừ: <br>Kiến nghị: <br>Trải nghiệm phỏng vấn:</p>
-      <br><br>
+        <hr>
+            {%for x in noidung%}
+            <h2></h2>
+            <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi anonymous | 2016.</h5>
+            <p>"{{x}}"</p>
+            <br><br>
+            {%endfor%}
+        </hr>
 
-{#        <footer>#}
-{#            <div class="row">#}
-{#                <div class="col-md-6">#}
-{#                    <p>© 2016 All Rights Reserved | Job Wise</p>#}
-{#                </div>#}
-{#            </div>#}
-{#        </footer>#}
+        <hr>
+
+    <div><h1></h1></div>
 
     </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/static/js/jquery.js"></script>
+
+    </div>
+    <div class="clear"></div>
 
     <!-- jQuery -->
     <script src="/static/js/jquery.js"></script>

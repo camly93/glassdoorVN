@@ -23,7 +23,6 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/about-us">/ VỀ CHÚNG TÔI</a></li>
                     <li><a href="/company-list">/ DANH SÁCH CÔNG TY</a></li>
-                    <li><a href="/review-form">/ ĐÁNH GIÁ CÔNG TY</a></li>
                 </ul>
             </div>
         </div>
@@ -50,11 +49,11 @@
                           <div class="row ">
             <!-- Logo  -->
             <div class="col-sm-3 col-sm-push-9 text-center">
-                <span class="hidden-xs"><a class="" href="#">
+                <span class="hidden-xs"><a class="" href="{{item['company']}}-review">
                     <span class="push-top-xxs blue"> </span></a>
                 </span>
 
-                <a href="#" target="_blank">
+                <a href="{{item['company']}}-review" target="_blank">
                     <div class="logo">
                     <img title="{{item['company']}}" class="img-responsive" src="{{item['logo']}}">
                     </div>
@@ -69,7 +68,7 @@
 
                 <!-- Job Title -->
             <div class="bold-red ">
-                <a href="#" class="job-title text-clip text-lg" target="_blank"><b><h4>{{item['title']}}</h4></b></a>
+                <a href="/{{item['company']}}-review" class="job-title text-clip text-lg" target="_blank"><b><h4>{{item['title']}}</h4></b></a>
             </div>
 
             <span class="company-name text-clip visible-xs">
@@ -77,7 +76,7 @@
             </span>
 
             <span class="visible-xs">
-                <a class="" href="#"><span class="push-top-xxs blue"> </span></a>
+                <a class="" href="{{item['company']}}-review"><span class="push-top-xxs blue"> </span></a>
             </span>
 
                 <!-- Job info -->
@@ -111,4 +110,6 @@
 
 </body>
 </html>
+
+
 
