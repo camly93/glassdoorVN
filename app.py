@@ -51,17 +51,15 @@ def aboutus():
 @app.route('/home', methods=['GET','POST'])
 def home():
     temp=[]
+    collection = db['job-offer']
+    everything = collection.find()
     if request.method == 'POST':
         for x in everything:
-            if x['company']==request.form['COMPANY']:
-                temp.append(x)
+            print(x['location'])
             if x['location']==request.form['CITY']:
                 temp.append(x)
-            for y in x['jobgroup']:
-                if y==request.form['JOB TITLE']:
-                    temp.append(x)
         print(temp)
-        return render_template('Company-list.html',everything=temp,manypage=len(temp),current=1)
+        return render_template('Company-list.html',everything=temp, manypage=len(temp)//25, current=1)
     return render_template('Home.html')
 
 #trang COMPANY REVIEW
