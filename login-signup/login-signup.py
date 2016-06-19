@@ -29,6 +29,7 @@ def home():
     return "Welcome home!"
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+<<<<<<< HEAD
     error = None
     if request.method == 'POST':
         if request.form['userid']=='aaaa':
@@ -52,5 +53,14 @@ def search(a=pagelist[0],current=1,c=len(pagelist)):
         a=pagelist[current-1]
         return render_template('xxx.html', everything=a, manypage=c, current=current)
     return render_template('xxx.html',everything=a,manypage=c,current=current)
+=======
+    return render_template('login.html')
+
+@app.route('/review')
+def review():
+    return render_template('input-review.html')
+
+
+>>>>>>> 78997c1dd575a0e7fcfa83272a4e115067da4f4f
 if __name__ == '__main__':
     app.run()
