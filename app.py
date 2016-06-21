@@ -82,6 +82,20 @@ def signup(company,noidung='',info=''):
             temp.append(x['noidung'])
     return render_template('Company-review.html',company=company,info=info,noidung=temp)
 
+@app.route('/company-review', methods=['GET','POST'])
+def search2():
+    temp=[]
+    collection = db['job-offer']
+    everything = collection.find()
+    if request.method == 'POST':
+        for x in everything:
+            print(x['location'])
+            if x['location']==request.form['CITY']:
+                temp.append(x)
+        print(temp)
+        return render_template('Company-list.html', everything=temp, manypage=len(temp)//25, current=1)
+    return render_template('Company-review.html')
+
 #trang COMPANY LIST
 @app.route('/company-list',methods=['POST','GET'])
 def search(a=pagelist[0],current=1,c=len(pagelist)):
